@@ -19,7 +19,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
 @Table(name= "departamentos")
@@ -35,7 +34,7 @@ public class Departamento implements Serializable {
 	@Column(name = "cantidad_empleados")
 	
 	@Getter(AccessLevel.NONE)
-	private int cantidadEmpleados = 0;
+	private int cantidadEmpleados;
 	@OneToMany(
 			mappedBy = "departamento",
 			cascade = CascadeType.ALL,

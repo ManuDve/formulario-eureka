@@ -40,20 +40,18 @@ public class PersonaController {
 	@PostMapping
 	public ResponseEntity<?> crearPersona(@RequestBody Persona persona) {
 		Departamento departamentoReferenciado = departamentoService.getDepartamentoById(persona.getDepartamento().getId());
-		persona.setDepartamento(departamentoReferenciado); 
+		persona.setDepartamento(departamentoReferenciado);
+		persona.setNombreDepartamento();
+		
 		if (persona.getDepartamento() == null) {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Departamento incorrecto");
 		}
 		
-		// Actualiza base de datos h2 de cantidad
-		Integer numeroActualEmpleados = departamentoReferenciado.getCantidadEmpleados();
+		Integer numeroActualEmpleados = departamentoReferenciado.getCantidadEmpleados()+1;
 		departamentoReferenciado.setCantidadEmpleados(numeroActualEmpleados++);
 		
-		// Actualiza area
-		persona.setNombreDepartamento();
-		
-		
 		personaService.createPersona(persona);
+		
 		return ResponseEntity.status(HttpStatus.CREATED).body(persona);
 	}
 
