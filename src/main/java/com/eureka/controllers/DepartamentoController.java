@@ -26,6 +26,7 @@ public class DepartamentoController {
 		return departamentoService.getAllDepartamentos();
 	}
 	@GetMapping("/{id}")
+	@CrossOrigin
 	public Departamento obtenerDepartamentoPorId(@PathVariable("id") Long id) {
 		return departamentoService.getDepartamentoById(id);
 	}
