@@ -14,7 +14,7 @@ Proyecto de API Rest
 - Clonar el repositorio localmente
 
 ```
-git clone https://github.com/ManuDve/superheroes-topsecret.git](https://github.com/ManuDve/formulario-eureka-back.git
+git clone https://github.com/ManuDve/superheroes-topsecret.git
 ```
 
 - Importar Proyecto desde el File System
