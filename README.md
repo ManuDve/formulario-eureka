@@ -14,14 +14,14 @@ Proyecto de API Rest
 - Clonar el repositorio localmente
 
 ```
-git clone https://github.com/ManuDve/superheroes-topsecret.git
+git clone https://github.com/ManuDve/superheroes-topsecret.git](https://github.com/ManuDve/formulario-eureka-back.git
 ```
 
 - Importar Proyecto desde el File System
 - Cargar las dependencias con Maven
 - Levantar la intancia `formulario-eureka`
 
-### Consola H2 Servicio Superheroes
+### Consola H2
 
 Luego de levantar el servicio, se puede acceder a la consola de la base de datos a través de la siguiente URL
 ```
