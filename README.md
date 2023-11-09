@@ -1,6 +1,6 @@
 # Introducción
 
-Proyecto de API Rest
+Proyecto de API Rest que funciona en conjunto al proyecto de https://github.com/ManuDve/formulario-eureka-FRONT
 
 ## Prerequisitos de instalación
 
