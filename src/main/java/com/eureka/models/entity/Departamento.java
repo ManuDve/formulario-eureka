@@ -40,7 +40,7 @@ public class Departamento implements Serializable {
 			cascade = CascadeType.ALL,
 			fetch = FetchType.LAZY
 			)
-	@JsonIgnoreProperties("departamento")
+	@JsonIgnoreProperties({"departamento", "nombreDepartamento"})
 	private List<Persona> listaEmpleados;
 	
  

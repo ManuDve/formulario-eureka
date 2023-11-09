@@ -39,6 +39,7 @@ public class Persona implements Serializable  {
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private Departamento departamento;
 	@Column(name = "area")
+	@JsonProperty("area")
 	@Getter(AccessLevel.NONE)
 	@Setter(AccessLevel.NONE)
 	private String nombreDepartamento;
